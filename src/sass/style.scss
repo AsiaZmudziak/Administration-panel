@@ -1,5 +1,5 @@
 @import "variables";
-// @import "mixins";
+//@import "mixins";
 @import "normalize";
 @import "global";
 @import "layout";
@@ -21,6 +21,8 @@
 @import "sections/sidebar";
 @import "sections/statistics";
 @import "sections/links";
+@import "sections/form";
+
 
 /* Pages / Views */
 @import "pages/dashboard";

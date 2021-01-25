@@ -4,52 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Admin Panel Solo</title>
+  <title>Admin Panel Style Guide</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
   <link rel="stylesheet" href="vendor/Glyphter.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
- <!-- TOPBAR -->
- <section class="topbar">
-  <div class="row">
-    <div class="col-12">
-      <ul>
-        <li class="topbar__item">
-          <a href="#">
-            <span class="topbar__item--icon icon-wallet"></span>
-            <span class="topbar__item--price">$1,500.00</span>
-            <span class="topbar__item--icon arrow icon-arrow-down-small"></span>
-          </a>
-        </li>
-        <li class="topbar__item">
-          <a href="#">
-            <span class="icon-notification"></span>
-            <span class="topbar__item--dot"></span>
-          </a>
-        </li>
-        <li class="topbar__item">
-          <a href="#">
-            <span class="topbar__item--icon icon-profile"></span>
-            <span class="topbar__item--user">Leonardo Di Caprio</span>
-          </a>
-        </li>
-        <li class="topbar__item">
-          <a href="#">
-            <span class="topbar__item--icon icon-quit"></span>
-          </a>
-        </li>
-      </ul>
+  <!-- TOPBAR -->
+  <section class="topbar">
+    <div class="row">
+      <div class="col-12">
+        <ul>
+          <li class="topbar__item">
+            <a href="#">
+              <span class="topbar__item--icon icon-wallet"></span>
+              <span class="topbar__item--price">$1,500.00</span>
+              <span class="topbar__item--icon arrow icon-arrow-down-small"></span>
+            </a>
+          </li>
+          <li class="topbar__item">
+            <a href="#">
+              <span class="icon-notification"></span>
+              <span class="topbar__item--dot"></span>
+            </a>
+          </li>
+          <li class="topbar__item">
+            <a href="#">
+              <span class="topbar__item--icon icon-profile"></span>
+              <span class="topbar__item--user">Leonardo Di Caprio</span>
+            </a>
+          </li>
+          <li class="topbar__item">
+            <a href="#">
+              <span class="topbar__item--icon icon-quit"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SIDEBAR -->
-<section class="sidebar" id="sidebar">
+  <!-- SIDEBAR -->
+  <section class="sidebar" id="sidebar">
     <div class="row">
       <div class="col-12">
         <div class="branding">
@@ -96,7 +94,7 @@
             </a>
           </li>
           <li class="menu__item">
-            <a href="#">
+            <a href="#postback" class="menu__link">
               <span class="icon-postback menu__item--icon"></span>
               <span class="menu__item--title">Postback</span>
             </a>
@@ -104,6 +102,7 @@
         </ul>
       </div>
     </div>
+
     <div class="row">
       <div class="col-12">
         <div class="manager">
@@ -121,17 +120,16 @@
   </section>
 
   <!-- MAIN -->
-  <div class="main"id="main">
+  <div class="main" id="main">
 
-    <!-- SECTION STATISTICS -->
-    
+    <!-- SECTION STATISTICS  -->
     <section class="statistics section-box">
       <div class="row">
         <div class="col-12">
           <h1 class="section__header--line">General STATISTICS</h1>
         </div>
       </div>
-
+      
       <div class="row date">
         <div class="col-12 center-content">
           <div class="date__input">
@@ -139,7 +137,6 @@
             <div class="date__input--end"><input type="text" value="24.01.2021"></div>
             <div class=" date__input--icon"><span class="icon-calendar"></span></div>
           </div>
-
           <button class="btn btn__one icon-refresh"></button>
         </div>
       </div>
@@ -157,7 +154,6 @@
                 <span class="stats__column--number">564</span>
               </div>
             </div>
-
             <div class="row stats">
               <div class="col-md-5 stats__column">
                 <span class="stats__column--title">FTD</span>
@@ -171,12 +167,10 @@
           </div>
         </div>
       </div>
-
       <div class="row padding-content">
         <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
           <h1 class="section__subtitle">Earnings Chart</h1>
         </div>
-
         <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
           <canvas id="myChart"></canvas>
         </div>
@@ -195,15 +189,12 @@
           <h1 class="section__header--line">Links</h1>
         </div>
       </div>
-
-
       <div class="container">
         <div class="row">
           <div class="col-sm-12 center-content padding-content">
             <button class="btn btn__one">+ add new</button>
           </div>
         </div>
-
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
@@ -331,10 +322,116 @@
       </div>
     </section>
 
-    <!-- END MAIN -->
+    <!-- SECTION PERSONAL DATA  -->
+    <section class="form section-box">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="section__header--line">Personal Data</h1>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+        <form action="" method="POST">
+          <div class="container">
+            <div class="form__section">
+              <div class="form__section--label">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="form__section--input">
+                <input type="text" id="fname" name="name" placeholder="Leonardo" required>
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__section--label">
+                <label for=";name">Last Name</label>
+              </div>
+              <div class="form__section--input">
+                <input type="text" id="lname" name="lname" placeholder="Dicaprio" required>
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__section--label">
+                <label for="email">Email</label>
+              </div>
+              <div class="form__section--input">
+                <input type="email" id="email" name="email" placeholder="leo@gmail.com" required>
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__section--label">
+                <label for="phone">Phone</label>
+              </div>
+              <div class="form__section--input">
+                <input type="text" id="phone" name="phone" placeholder="+1 432 555 00 44" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__line"></div>
+
+          <div class="container">
+            <div class="form__section">
+              <div class="form__section--label">
+                <label for="skype">Skype</label>
+              </div>
+              <div class="form__section--input">
+                <input type="text" id="skype" name="skype" placeholder="Leonardo.D">
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__section--label">
+                <label for="hangouts">Hangouts</label>
+              </div>
+              <div class="form__section--input">
+                <input type="text" id="hangouts" name="hangouts" placeholder="">
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__section--label">
+                <label for="gg">GG</label>
+              </div>
+              <div class="form__section--input">
+                <input type="text" id="gg" name="gg" placeholder="">
+              </div>
+            </div>
+          </div>
+
+          <div class="form__line"></div>
+
+          <div class="container">
+            <div class="form__section">
+              <div class="form__section--label">
+                <label>Password</label>
+              </div>
+              <div class="form__section--input">
+                <input type="password" required>
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__section--label">
+                <label>Repeat</label>
+              </div>
+              <div class="form__section--input">
+                <input type="password" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__line"></div>
+
+          <div class="container center-content">
+            <input type="submit" value="Save" class="btn btn__one">
+          </div>
+        </form>
+      </div>
+
   </div>
-  
+  </section>
+
+  <!-- END MAIN -->
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="js/script.js"></script>
-  
 </body>
+
 </html>

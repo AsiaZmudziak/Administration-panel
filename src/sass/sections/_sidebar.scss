@@ -36,3 +36,21 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+
+  .sidebar,
+  #sidebar {
+    width: 100%;
+  }
+
+  .menu {
+    &__item {
+      width: 100%;
+    }
+  }
+
+  .hamburger {
+    margin: 10px;
+  }
+}

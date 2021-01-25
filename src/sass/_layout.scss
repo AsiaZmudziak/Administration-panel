@@ -36,6 +36,26 @@
   padding-left: 15px;
 }
 
+.box {
+  margin: 20px;
+  background-color: $color-white;
+  padding-bottom: 20px;
+  box-shadow: 0 0 10px $color-grey-3;
+}
+
+.scroll_wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.line {
+  border-bottom: $border;
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+
 .center-content {
   display: flex;
   justify-content: center;
@@ -43,10 +63,6 @@
 
 .padding-content {
   padding: 2em 0;
-}
-
-.flex-content {
-  display: flex;
 }
 
 /* Grid: container media queries */

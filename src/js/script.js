@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
-/* Toggle Menu */
+/* eslint-disable no-undef */
 
+/* TOGGLE MENU */
 
 const hamburger = document.querySelector('#hamburger');
 
@@ -8,10 +9,74 @@ hamburger.addEventListener('click', function () {
   document.getElementById('sidebar').classList.toggle('active');
   document.getElementById('main').classList.toggle('active');
 });
-/* Chart */
+
+
+/* MOBILE MENU */
+
+function toggleMenu(visible) {
+  document.querySelector('.menu').classList.toggle('show', visible);
+}
+
+document.querySelector('#hamburger').addEventListener('click', function(e) {
+  e.preventDefault();
+  toggleMenu();
+});
+
+
+/* MODALS */
+
+// close modal by removing "show" class
+function closeModal() {
+  document.getElementById('ovrl').classList.remove('show');
+}
+
+// attach closeModal function to 'js-close-modal' class
+document.querySelectorAll('#ovrl .js--close-modal').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    closeModal();
+  });
+});
+
+// close modal by clicking on the background overlay
+document.querySelector('#ovrl').addEventListener('click', function(e) {
+  if(e.target === this) {
+    closeModal();
+  }
+});
+
+// close modal by clicking ESC
+document.addEventListener('keyup', function(e) {
+  if(e.keyCode === 27) {
+    closeModal();
+  }
+});
+
+// open modal
+function openModal(modal) {
+  document.querySelectorAll('#ovrl > *').forEach(function(modal) {
+    modal.classList.remove('show');
+  });
+  document.querySelector('#ovrl').classList.add('show');
+  document.querySelector(modal).classList.add('show');
+}
+
+const modalButtons = document.querySelectorAll('.modal-open');
+
+for (let item of modalButtons) {
+
+  item.addEventListener('click', function() {
+
+    const modal = this.getAttribute('data-modal');
+    openModal(modal);
+  });
+}
+
+
+/* CHART GENERATOR */
+
 var ctx = document.getElementById('myChart').getContext('2d');
 
-// eslint-disable-next-line no-undef
 var chart = new Chart(ctx, {
   // 1
   type: 'bar',

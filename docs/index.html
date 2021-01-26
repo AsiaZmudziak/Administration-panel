@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Admin Panel Style Guide</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="vendor/Glyphter.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- TOPBAR -->
+  <section class="topbar">
+    <div class="row">
+      <div class="col-12">
+        <ul>
+          <li class="topbar__item">
+            <a href="#">
+              <span class="topbar__item--icon icon-wallet"></span>
+              <span class="topbar__item--price">$1,500.00</span>
+              <span class="topbar__item--icon arrow icon-arrow-down-small"></span>
+            </a>
+          </li>
+          <li class="topbar__item">
+            <a href="#">
+              <span class="icon-notification"></span>
+              <span class="topbar__item--dot"></span>
+            </a>
+          </li>
+          <li class="topbar__item" id="modal-login-button">
+            <a href="#">
+              <span class="topbar__item--icon icon-profile"></span>
+              <span class="topbar__item--user">Leonardo Di Caprio</span>
+            </a>
+          </li>
+          <li class="topbar__item">
+            <a href="#">
+              <span class="topbar__item--icon icon-quit"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIDEBAR -->
+  <section class="sidebar" id="sidebar">
+    <div class="row">
+      <div class="col-12">
+        <div class="branding">
+          <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+          <a href="#">
+            <div id="hamburger" class="hamburger"></div>
+          </a>
+        </div>
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#general" class="menu__link">
+              <span class="icon-general menu__item--icon"></span>
+              <span class="menu__item--title">General</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#details" class="menu__link">
+              <span class="icon-details menu__item--icon"></span>
+              <span class="menu__item--title">Details</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#banners" class="menu__link">
+              <span class="icon-banners menu__item--icon"></span>
+              <span class="menu__item--title">Banners</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#links" class="menu__link">
+              <span class="icon-links menu__item--icon"></span>
+              <span class="menu__item--title">Links</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#data" class="menu__link">
+              <span class="icon-personaldata menu__item--icon"></span>
+              <span class="menu__item--title">Personal data</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#payout" class="menu__link">
+              <span class="icon-payout menu__item--icon"></span>
+              <span class="menu__item--title">Payout</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#postback" class="menu__link">
+              <span class="icon-postback menu__item--icon"></span>
+              <span class="menu__item--title">Postback</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="manager">
+          <h4 class="manager__title">Your manager</h4>
+        </div>
+        <div class="col-12 manager__photo">
+          <a href="#">
+            <span class="dot"></span>
+            <img src="images/avatar.png" />
+            <span class="manager__name">Mikhael E.</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <div class="main" id="main">
+
+   <!-- SECTION GENERAL STATISTICS  -->
+   <section class="statistics box">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="section__title">General Statistics</h1>
+        </div>
+      </div>
+      
+      <div class="datepicker">
+        <div class="date">
+          <div class="date__box">
+            <div class="date__box--start">24.01.2021</div>
+            <div class="date__box--end">24.01.2021</div>
+            <div class=" date__box--icon"><span class="icon-calendar"></span></div>
+          </div>
+          <button class="btn__refresh icon-refresh"></button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 padding-content">
+            <div class="row stats">
+              <div class="col-md-5 stats__column">
+                <span class="stats__column--title">Visit Signups</span>
+                <span class="stats__column--number">124</span>
+              </div>
+              <div class="col-md-5 stats__column">
+                <span class="stats__column--title">New deposit</span>
+                <span class="stats__column--number">564</span>
+              </div>
+            </div>
+            <div class="row stats">
+              <div class="col-md-5 stats__column">
+                <span class="stats__column--title">FTD</span>
+                <span class="stats__column--number">445</span>
+              </div>
+              <div class="col-md-5 stats__column">
+                <span class="stats__column--title">Turn Over</span>
+                <span class="stats__column--number">432</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row padding-content">
+        <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <h1 class="section__subtitle">Earnings Chart</h1>
+        </div>
+        <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="col-sm-12 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-4">
+          <button class="btn__dot--blue"><i class="fa fa-circle"></i>Signups</button>
+          <button class="btn__dot--orange"><i class="fa fa-circle"></i>FTD</button>
+          <button class="btn__dot--green"><i class="fa fa-circle"></i>Earned</button>
+        </div>
+      </div>
+      </section>
+
+ <!-- SECTION DETAIL STATISTICS -->
+ <section class="details box">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="section__title">Detail Statistics</h1>
+    </div>
+  </div>
+
+  <div class="datepicker">
+    <div class="date">
+      <div class="date__box">
+        <div class="date__box--start">24.01.2021</div>
+        <div class="date__box--end">24.01.2021</div>
+        <div class=" date__box--icon"><span class="icon-calendar"></span></div>
+      </div>
+      <button class="btn__refresh icon-refresh"></button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <table class="details__table container">
+        <thead>
+          <tr class="details__table--head">
+            <th>Tracker name</th>
+            <th>Initiated date</th>
+            <th>Visits</th>
+            <th>Unique</th>
+            <th>Signups</th>
+            <th>FTD</th>
+            <th>Depositors</th>
+            <th>
+              <div class="sorter">Deposits ($)<i class="icon-arrow-up-small"></i></div>
+            </th>
+            <th>Payout ($)</th>
+            <th>Turnover</th>
+            <th>Deal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table__row">
+            <td>aff/sam_test</td>
+            <td>17/08/02 (12:58)</td>
+            <td>232</td>
+            <td>114</td>
+            <td>12</td>
+            <td>6</td>
+            <td>3</td>
+            <td>34,425.00</td>
+            <td>234.00</td>
+            <td>421,342.00</td>
+            <td>cpl (200)</td>
+          </tr>
+          <tr class="details__table--row">
+            <td>aff/leo_test</td>
+            <td>15/08/02 (12:58)</td>
+            <td>232</td>
+            <td>114</td>
+            <td>12</td>
+            <td>6</td>
+            <td>3</td>
+            <td>29,436.00</td>
+            <td>941.00</td>
+            <td>784,435.00</td>
+            <td>cpl (200)</td>
+          </tr>
+          <tr class="details__table--row">
+            <td>aff/sam_test</td>
+            <td>17/08/02 (12:58)</td>
+            <td>232</td>
+            <td>114</td>
+            <td>12</td>
+            <td>6</td>
+            <td>3</td>
+            <td>34,425.00</td>
+            <td>234.00</td>
+            <td>421,342.00</td>
+            <td>cpl (200)</td>
+          </tr>
+          <tr class="details__table--row">
+            <td>aff/leo_test</td>
+            <td>15/08/02 (12:58)</td>
+            <td>232</td>
+            <td>114</td>
+            <td>12</td>
+            <td>6</td>
+            <td>3</td>
+            <td>29,436.00</td>
+            <td>941.00</td>
+            <td>784,435.00</td>
+            <td>cpl (200)</td>
+          </tr>
+          <tr class="details__table--row">
+            <td>aff/sam_test</td>
+            <td>17/08/02 (12:58)</td>
+            <td>232</td>
+            <td>114</td>
+            <td>12</td>
+            <td>6</td>
+            <td>3</td>
+            <td>34,425.00</td>
+            <td>234.00</td>
+            <td>421,342.00</td>
+            <td>cpl (200)</td>
+          </tr>
+          <tr class="details__table--row">
+            <td>aff/leo_test</td>
+            <td>15/08/02 (12:58)</td>
+            <td>232</td>
+            <td>114</td>
+            <td>12</td>
+            <td>6</td>
+            <td>3</td>
+            <td>29,436.00</td>
+            <td>941.00</td>
+            <td>784,435.00</td>
+            <td>cpl (200)</td>
+          </tr>
+          <tr class="details__table--row">
+            <td>aff/sam_test</td>
+            <td>17/08/02 (12:58)</td>
+            <td>232</td>
+            <td>114</td>
+            <td>12</td>
+            <td>6</td>
+            <td>3</td>
+            <td>34,425.00</td>
+            <td>234.00</td>
+            <td>421,342.00</td>
+            <td>cpl (200)</td>
+          </tr>
+          <tr class="details__table--row">
+            <td>aff/leo_test</td>
+            <td>15/08/02 (12:58)</td>
+            <td>232</td>
+            <td>114</td>
+            <td>12</td>
+            <td>6</td>
+            <td>3</td>
+            <td>29,436.00</td>
+            <td>941.00</td>
+            <td>784,435.00</td>
+            <td>cpl (200)</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 center-content padding-content">
+        <div class="pagination">
+          <a href="#"><i class="icon-arrow-left"></i></a>
+          <a href="#">1</a>
+          <a href="#" class="active">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#"><i class="icon-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION BANNERS -->
+<section class="banners box">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="section__title">Banners</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 center-content padding-content">
+        <button class="btn__orange">+ add new</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8  col-lg-offset-2">
+        <table class="table">
+          <tbody>
+            <tr class="table__row">
+              <td class="table__cell title">Banner main</td>
+              <td class="table__cell address">http://www.website.com/bannermain.gif</td>
+              <td class="table__cell icons">
+                <div class="overlay">
+                  <a href="#"><span class="icon-links"></span></a>
+                  <a href="#"><span class="icon-trash"></span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell title">Signup banner</td>
+              <td class="table__cell address">http://www.website.com/signup.gif</td>
+              <td class="table__cell icons">
+                <div class="overlay">
+                  <a href="#"><span class="icon-links"></span></a>
+                  <a href="#"><span class="icon-trash"></span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell title">Banner left side</td>
+              <td class="table__cell address"> http://www.website.com/leftside.gif</td>
+              <td class="table__cell icons">
+                <div class="overlay">
+                  <a href="#"><span class="icon-links"></span></a>
+                  <a href="#"><span class="icon-trash"></span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell title">Vertical banner</td>
+              <td class="table__cell address"> http://www.website.com/vert.gif</td>
+              <td class="table__cell icons">
+                <div class="overlay">
+                  <a href="#"><span class="icon-links"></span></a>
+                  <a href="#"><span class="icon-trash"></span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell title">Front banner</td>
+              <td class="table__cell address">http://www.website.com/front.gif</td>
+              <td class="table__cell icons">
+                <div class="overlay">
+                  <a href="#"><span class="icon-links"></span></a>
+                  <a href="#"><span class="icon-trash"></span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell title">Horizontal banner</td>
+              <td class="table__cell address"> http://www.website.com/horizontal.gif</td>
+              <td class="table__cell icons">
+                <div class="overlay">
+                  <a href="#"><span class="icon-links"></span></a>
+                  <a href="#"><span class="icon-trash"></span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell title">Facebook</td>
+              <td class="table__cell address"> http://www.facebook.com</td>
+              <td class="table__cell icons">
+                <div class="overlay">
+                  <a href="#"><span class="icon-links"></span></a>
+                  <a href="#"><span class="icon-trash"></span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell title">Dashboard</td>
+              <td class="table__cell address"> http://www.dashboard.com</td>
+              <td class="table__cell icons">
+                <div class="overlay">
+                  <a href="#"><span class="icon-links"></span></a>
+                  <a href="#"><span class="icon-trash"></span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell title">Blurax</td>
+              <td class="table__cell address"> http://www.blurax.com</td>
+              <td class="table__cell icons">
+                <div class="overlay">
+                  <a href="#"><span class="icon-links"></span></a>
+                  <a href="#"><span class="icon-trash"></span></a>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell title">Piece of Wine </td>
+              <td class="table__cell address"> http://www.pieceofwine.com</td>
+              <td class="table__cell icons">
+                <div class="overlay">
+                  <a href="#"><span class="icon-links"></span></a>
+                  <a href="#"><span class="icon-trash"></span></a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <div class="col-sm-12 center-content padding-content">
+        <button class="btn__orange">+ add new</button>
+      </div>
+    
+  </div>
+    </section>
+
+    <!-- SECTION LINKS -->
+    <section class="links box">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="section__title">Links</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 center-content padding-content">
+            <button class="btn__orange">+ add new</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8  col-lg-offset-2">
+            <table class="table">
+              <tbody>
+                <tr class="table__row">
+                  <td class="table__cell title">Homepage</td>
+                  <td class="table__cell address">http://homepage.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Currently offer</td>
+                  <td class="table__cell address"> http://www.currently.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Blurpix</td>
+                  <td class="table__cell address">http://www.blurpix.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Your Site</td>
+                  <td class="table__cell address">http://www.yoursite.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Your Site</td>
+                  <td class="table__cell address">http://www.yoursite.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Google</td>
+                  <td class="table__cell address"> http://www.google.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Facebook</td>
+                  <td class="table__cell address"> http://www.facebook.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Dashboard</td>
+                  <td class="table__cell address"> http://www.dashboard.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Blurax</td>
+                  <td class="table__cell address"> http://www.blurax.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Piece of Wine </td>
+                  <td class="table__cell address"> http://www.pieceofwine.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-sm-12 center-content padding-content">
+          <button class="btn__orange">+ add new</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION PERSONAL DATA  -->
+    <section class="form box">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="section__title">Personal Data</h1>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+        <form action="" method="POST">
+          <div class="container">
+            <div class="form__section">
+              <div class="form__label">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="form__section--input">
+                <input type="text" id="fname" name="name" placeholder="Leonardo" required>
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__label">
+                <label for=";name">Last Name</label>
+              </div>
+              <div class="form__section--input">
+                <input type="text" id="lname" name="lname" placeholder="Dicaprio" required>
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__label">
+                <label for="email">Email</label>
+              </div>
+              <div class="form__section--input">
+                <input type="email" id="email" name="email" placeholder="leo@gmail.com" required>
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__label">
+                <label for="phone">Phone</label>
+              </div>
+              <div class="form__section--input">
+                <input type="text" id="phone" name="phone" placeholder="+1 432 555 00 44" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="container">
+            <div class="form__section">
+              <div class="form__label">
+                <label for="skype">Skype</label>
+              </div>
+              <div class="form__section--input">
+                <input type="text" id="skype" name="skype" placeholder="Leonardo.D">
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__label">
+                <label for="hangouts">Hangouts</label>
+              </div>
+              <div class="form__section--input">
+                <input type="text" id="hangouts" name="hangouts" placeholder="">
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__label">
+                <label for="gg">GG</label>
+              </div>
+              <div class="form__label">
+                <input type="text" id="gg" name="gg" placeholder="">
+              </div>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="container">
+            <div class="form__section">
+              <div class="form__label">
+                <label>Password</label>
+              </div>
+              <div class="form__label">
+                <input type="password" required>
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__label">
+                <label>Repeat</label>
+              </div>
+              <div class="form__label">
+                <input type="password" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="container center-content">
+            <input type="submit" value="Save" class="btn__orange">
+          </div>
+        </form>
+      </div>
+
+  </div>
+  </section>
+
+  <!-- END MAIN -->
+  </div>
+
+ <!-- MODALS -->
+
+  <!-- MODAL LOGIN -->
+  <div class="ovrl" id="ovrl">
+    <div class="modal" id="modal-login">
+      <h1 class="section__title">Login</h1>
+      <div class="form__section md-padding">
+        <div class="form__input">
+          <input type="text" id="login-name" name="login-name" placeholder="login">
+        </div>
+        <div class="form__input">
+          <input type="password" id="login-password" name="login-password" placeholder="password">
+        </div>
+        <button class="btn__orange js--close-modal" type="button">Enter</button>
+      </div>
+    </div>
+  </div> <!-- end modal login -->
+
+  <!-- MODAL QUIT -->
+  <div class="ovrl" id="ovrl">
+    <div class="modal" id="modal-quit">
+      <h1 class="section__title">Do you really want to quit?</h1>
+      <div class="form__section md-padding">
+        <button class="btn__grey js--close-modal">Cancel</button>
+        <button class="btn__orange js--close-modal">Quit</button>
+      </div>
+    </div>
+  </div> <!-- end modal quit -->
+
+  <!-- MODAL BANNERS -->
+  <div class="ovrl" id="ovrl">
+    <div class="modal-big" id="modal-banners">
+      <h1 class="section__title">Banners</h1>
+
+      <div class="modal-row">
+
+        <div class="col-md-5">
+          <form>
+            <div class="form__label">
+              <label for="scheme">Scheme Name</label>
+            </div>
+            <div class="form__input">
+              <input type="text" id="scheme" name="scheme" placeholder="Name" required>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-5">
+          <form>
+            <div class="form__label">
+              <label for="compain">Compain</label>
+            </div>
+            <div class="form__input">
+              <select id="compain" name="compain">
+                <option value="opt">Select compain</option>
+                <option value="opt">Select compain</option>
+                <option value="opt">Select compain</option>
+                <option value="opt">Select compain</option>
+                <option value="opt">Select compain</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-2">
+          <form>
+            <div class="form__label">
+              <label for="language">Language</label>
+            </div>
+            <div class="form__input">
+              <select id="language" name="language">
+                <option value="opt">English</option>
+                <option value="opt">Russian</option>
+                <option value="opt">Chinese</option>
+                <option value="opt">Turkish</option>
+                <option value="opt">Hindi</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="modal-row">
+
+        <div class="col-md-4">
+          <form>
+            <div class="form__label">
+              <label for="selected">Select</label>
+            </div>
+            <div class="form__input">
+              <select id="selected" name="selected">
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-4">
+          <form>
+            <div class="form__label">
+              <label for="design">Design</label>
+            </div>
+            <div class="form__input">
+              <select id="design" name="design">
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-4">
+          <form>
+            <div class="form__label">
+              <label for="file-type">File type</label>
+            </div>
+            <div class="form__input">
+              <select id="file-type" name="file-type">
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="line"></div>
+
+      <div class="modal-row">
+
+        <div class="col-md-6">
+
+          <h3 class="section__subtitle">Select banners</h3>
+
+          <div class="modal-scroll">
+            <form>
+              <label class="checkbox-container">Banner main
+                <input type="checkbox" checked="checked">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Signup banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Left banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Right banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Bottom banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Long banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Short banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Left banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Right banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Bottom banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Long banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Short banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+          <h3 class="section__subtitle">Select websites</h3>
+
+          <div class="modal-scroll">
+            <form>
+              <label class="checkbox-container">Banner site
+                <input type="checkbox" checked="checked">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Signup site
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Left site
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Right site
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Bottom banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Long banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Short banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Left banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Right banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Bottom banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Long banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Short banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="line"></div>
+
+      <div class="modal-row">
+
+        <div class="col-12 modal-full">
+
+          <input type="text" id="glink" name="glink" placeholder="Generated link" required>
+          <button class="btn__grey">Copy link</button>
+          <button class="btn__orange">Save</button>
+        </div>
+
+      </div>
+
+    </div> <!-- end modal banners -->
+
+  </div> <!-- end modal banners -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
